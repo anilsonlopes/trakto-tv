@@ -1,1 +1,24 @@
-<p>material works!</p>
+<div class="px-10 py-5 bg-gray-200">
+  <div class="mx-auto max-w-7xl">
+    <img class="w-full" src="/assets/image/banner.jpg" alt="Banner" />
+
+    <app-slider
+      title="Material didático"
+      subtitle="Acesse suas últimas apresentações de aula"
+      [action]="{
+        text: 'Ver todo conteúdo',
+        to: '/material-todos',
+        target: '_self'
+      }"
+    />
+    <app-slider
+      title="Vídeo aulas"
+      subtitle="Complemente os estudos assistindo o conteúdo de forma dinâmica."
+      [action]="{
+        text: 'Abrir no Youtube',
+        to: 'https://youtube.com/trakto-tv',
+        target: '_blank'
+      }"
+    />
+  </div>
+</div>
