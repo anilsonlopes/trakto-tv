@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { MaterialComponent } from './material/material.component';
 import { MaterialTodosComponent } from './material-todos/material-todos.component';
 import { SliderComponent } from './slider/slider.component';
+import { TopbarComponent } from './topbar/topbar.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { SliderComponent } from './slider/slider.component';
     MaterialComponent,
     MaterialTodosComponent,
     SliderComponent,
+    TopbarComponent,
   ],
   imports: [
     BrowserModule,
