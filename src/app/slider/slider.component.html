@@ -1,0 +1,100 @@
+<div class="mt-10 bg-white rounded p-10">
+  <div class="flex justify-between items-start">
+    <div>
+      <div class="flex space-x-3">
+        <div
+          class="py-1 px-2 leading-none bg-gray-200 text-gray-700 font-medium rounded-full"
+        >
+          Semana 06/02 até 28/02
+        </div>
+        <button type="button">
+          <svg
+            width="20"
+            height="21"
+            viewBox="0 0 20 21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12.5 17.1L7.0667 11.6667C6.42503 11.025 6.42503 9.97499 7.0667 9.33333L12.5 3.89999"
+              stroke="#7183A6"
+              stroke-width="1.5"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <button type="button">
+          <svg
+            width="20"
+            height="21"
+            viewBox="0 0 20 21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.42505 17.1L12.8584 11.6667C13.5 11.025 13.5 9.97499 12.8584 9.33333L7.42505 3.89999"
+              stroke="#7183A6"
+              stroke-width="1.5"
+              stroke-miterlimit="10"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+      <h4 class="text-gray-800 text-2xl font-bold">
+        {{ title }}
+      </h4>
+      <h6 class="text-gray-600">
+        {{ subtitle }}
+      </h6>
+    </div>
+    <a
+      [href]="action.to"
+      [target]="action.target"
+      class="px-5 py-3 border border-current rounded text-blue-700"
+    >
+      {{ action.text }}
+    </a>
+  </div>
+
+  <div class="mt-10 flex space-x-5">
+    <!-- thumb -->
+    <div>
+      <div class="w-80 h-44 bg-gray-600 rounded flex items-end">
+        <span
+          class="m4 bg-black bg-opacity-25 rounded-full px-3 py-1 text-white"
+        >
+          5 Slides
+        </span>
+      </div>
+      <p class="text-gray-800 font-semibold">Aula 1: Fono-ortografia</p>
+    </div>
+
+    <!-- thumb -->
+    <div>
+      <div class="w-80 h-44 bg-gray-600 rounded flex items-end">
+        <span
+          class="m4 bg-black bg-opacity-25 rounded-full px-3 py-1 text-white"
+        >
+          5 Slides
+        </span>
+      </div>
+      <p class="text-gray-800 font-semibold">Aula 1: Fono-ortografia</p>
+    </div>
+
+    <!-- thumb -->
+    <div>
+      <div class="w-80 h-44 bg-gray-600 rounded flex items-end">
+        <span
+          class="m4 bg-black bg-opacity-25 rounded-full px-3 py-1 text-white"
+        >
+          5 Slides
+        </span>
+      </div>
+      <p class="text-gray-800 font-semibold">Aula 1: Fono-ortografia</p>
+    </div>
+  </div>
+</div>
