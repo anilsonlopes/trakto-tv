@@ -1,0 +1,22 @@
+.home {
+  background-color: #1d1b1b;
+  background-image: url("/assets/image/pattern.png");
+  @apply bg-cover flex flex-col h-screen;
+}
+
+.modulos {
+  background-color: rgba(31, 31, 31, 0.8);
+  @apply h-full flex justify-center items-center space-x-10;
+}
+
+.modulo {
+  @apply flex flex-col items-center space-y-5;
+}
+
+.modulo-label {
+  @apply font-bold text-white text-5xl text-center;
+}
+
+.modulo-icon {
+  @apply w-72 h-72;
+}

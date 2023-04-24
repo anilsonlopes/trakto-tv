@@ -1,1 +1,13 @@
-<p>home works!</p>
+<div class="home">
+  <app-topbar variant="dark" />
+  <div class="modulos">
+    <a
+      *ngFor="let modulo of modulos"
+      class="modulo"
+      [routerLink]="modulo.to"
+    >
+      <div class="modulo-label">{{ modulo.label }}</div>
+      <img class="modulo-icon" [src]="modulo.image" [alt]="modulo.label" />
+    </a>
+  </div>
+</div>
