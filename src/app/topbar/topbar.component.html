@@ -39,9 +39,9 @@
           fill="#1DC763"
         />
       </svg>
-      <button
+      <a
         *ngIf="changeEnvironment"
-        type="button"
+        routerLink="/"
         class="border border-current text-neutral-cloudy rounded-lg h-14 px-6 flex space-x-3 justify-center items-center"
       >
         <svg
@@ -75,7 +75,7 @@
         </svg>
 
         <span class="text-xl">Trocar de ambiente</span>
-      </button>
+      </a>
     </div>
     <div class="flex space-x-8 items-center text-neutral-cloudy">
       <button type="button" class="flex items-center space-x-2">
