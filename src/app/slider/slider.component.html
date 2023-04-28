@@ -1,9 +1,9 @@
-<div class="mt-10 bg-white rounded p-10">
+<div class="mt-10 bg-white rounded-lg p-10">
   <div class="flex justify-between items-start">
     <div>
       <div class="flex space-x-3">
         <div
-          class="py-1 px-2 leading-none bg-gray-200 text-gray-700 font-medium rounded-full"
+          class="py-1 px-2 leading-none bg-neutral-light text-neutral-cloudy font-medium rounded-full"
         >
           Semana 06/02 até 28/02
         </div>
@@ -44,57 +44,28 @@
           </svg>
         </button>
       </div>
-      <h4 class="text-gray-800 text-2xl font-bold">
+      <h4 class="text-neutral-dark text-2xl font-bold mt-4">
         {{ title }}
       </h4>
-      <h6 class="text-gray-600">
+      <h6 class="text-neutral-cloudy font-normal mt-1">
         {{ subtitle }}
       </h6>
     </div>
     <a
+      *ngIf="action"
       [routerLink]="action.to"
       [target]="action.target"
-      class="px-5 py-3 border border-current rounded text-blue-700"
+      class="px-5 py-3 border border-current rounded-lg text-blue-700"
     >
       {{ action.text }}
     </a>
+    <ng-content select="[action]"></ng-content>
   </div>
 
   <div class="mt-10 flex space-x-5">
-    <!-- thumb -->
-    <div>
-      <div class="w-80 h-44 bg-gray-600 rounded flex items-end">
-        <span
-          class="m4 bg-black bg-opacity-25 rounded-full px-3 py-1 text-white"
-        >
-          5 Slides
-        </span>
-      </div>
-      <p class="text-gray-800 font-semibold">Aula 1: Fono-ortografia</p>
-    </div>
-
-    <!-- thumb -->
-    <div>
-      <div class="w-80 h-44 bg-gray-600 rounded flex items-end">
-        <span
-          class="m4 bg-black bg-opacity-25 rounded-full px-3 py-1 text-white"
-        >
-          5 Slides
-        </span>
-      </div>
-      <p class="text-gray-800 font-semibold">Aula 1: Fono-ortografia</p>
-    </div>
-
-    <!-- thumb -->
-    <div>
-      <div class="w-80 h-44 bg-gray-600 rounded flex items-end">
-        <span
-          class="m4 bg-black bg-opacity-25 rounded-full px-3 py-1 text-white"
-        >
-          5 Slides
-        </span>
-      </div>
-      <p class="text-gray-800 font-semibold">Aula 1: Fono-ortografia</p>
-    </div>
+    <app-thumb total="2" title="Aula 23: Fono-ortografia" />
+    <app-thumb total="2" title="Aula 23: Fono-ortografia" />
+    <app-thumb total="2" title="Aula 23: Fono-ortografia" />
+    <app-thumb total="2" title="Aula 23: Fono-ortografia" />
   </div>
 </div>

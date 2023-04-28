@@ -8,9 +8,9 @@ import { Component, Input } from '@angular/core';
 export class SliderComponent {
   @Input() title = '';
   @Input() subtitle = '';
-  @Input() action = {
-    text: '',
-    to: '',
-    target: '',
-  }
+  @Input() action = null as null | {
+    text: string;
+    to: string;
+    target: string;
+  };
 }

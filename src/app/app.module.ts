@@ -9,6 +9,7 @@ import { MaterialComponent } from './material/material.component';
 import { MaterialTodosComponent } from './material-todos/material-todos.component';
 import { SliderComponent } from './slider/slider.component';
 import { TopbarComponent } from './topbar/topbar.component';
+import { ThumbComponent } from './thumb/thumb.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { TopbarComponent } from './topbar/topbar.component';
     MaterialTodosComponent,
     SliderComponent,
     TopbarComponent,
+    ThumbComponent,
   ],
   imports: [
     BrowserModule,
